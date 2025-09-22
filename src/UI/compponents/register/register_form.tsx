@@ -51,10 +51,10 @@ const RegisterForm: React.FC = () => {
     { value: "Bali", label: "Bali" },
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Submit Data:", formData);
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   console.log("Submit Data:", formData);
+  // };
 
 
   return (

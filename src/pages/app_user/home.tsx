@@ -5,7 +5,7 @@ import RecentTransaction from "../../UI/compponents/app_user/home/recent-transac
 import WalletHome from "../../UI/compponents/app_user/home/wallet"
 import NavbarUserApp from "../../UI/compponents/app_user/navbar"
 import TopUpInputNominal from "../../UI/compponents/wallet/top_up/input_nominal"
-import { Building, CreditCard, Smartphone } from "lucide-react"
+// import { Building, CreditCard, Smartphone } from "lucide-react"
 import BankWalletList from "../../UI/compponents/wallet/top_up/bank_wallet_list"
 
 const HomeUser = () => {
@@ -13,8 +13,10 @@ const HomeUser = () => {
     const [isOpenBankWallet, setIsOpenBankWallet] = useState(false)
     const [isOpenPaymentDetail, setIsOpenPaymentDetail] = useState(false)
     const [amount, setAmount] = useState('');
-    const [selectedMethod, setSelectedMethod] = useState('');
+    // const [selectedMethod, setSelectedMethod] = useState('');
     const [selectedWallet, setSelectedWallet] = useState("unicoin");
+
+    console.log(isOpenPaymentDetail)
 
     const walletTypes = [
         {
@@ -57,7 +59,10 @@ const HomeUser = () => {
             {
                 isOpenTopUp && (
                     <TopUpInputNominal
-                        onClose={() => setOpenTopUp(false)}
+                        onClose={() => {
+                            setOpenTopUp(false)
+                            setSelectedWallet("unicoin")
+                        }}
                         setIsOpenBankWallet={() => setIsOpenBankWallet(true)}
                         amount={amount}
                         setAmount={setAmount}

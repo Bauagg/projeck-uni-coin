@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import QRScannerUser from "../../UI/compponents/app_user/QRScaner/scan_qr";
 import NavbarUserApp from "../../UI/compponents/app_user/navbar";
 
 export default function QRScanner() {
     const [qrResult, setQrResult] = useState<string | null>(null);
+    console.log(qrResult)
 
     return (
         <div className="min-h-screen bg-unicoin-dark text-white pb-20">

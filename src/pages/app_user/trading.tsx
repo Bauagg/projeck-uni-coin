@@ -1,6 +1,6 @@
 import "../..//UI/compponents/app_user/trading/trading.css"
 import ImagesLogo from "../../assets/image/logo-unicoin-mini.svg"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavbarUserApp from "../../UI/compponents/app_user/navbar";
 import PriceBanner from "../../UI/compponents/app_user/trading/price_banner";
 import ActiveTabTrading from "../../UI/compponents/app_user/trading/active_tab_trading";
@@ -14,6 +14,13 @@ const UniCoinTradingApp = () => {
     const [userBalance, setUserBalance] = useState(1250);
     const [userUniCoin, setUserUniCoin] = useState(850);
     const [activeTab, setActiveTab] = useState('trade');
+
+    useEffect(() => {
+        setCurrentPrice(100)
+        setPriceChange(2.5)
+        setUserBalance(1250)
+        setUserUniCoin(850)
+    }, [])
 
     const recentTrades = [
         { id: 1, type: 'buy', amount: 50, price: 99.5, time: '14:25' },

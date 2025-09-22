@@ -1,5 +1,5 @@
 import "./home.css"
-import React, { useState } from "react";
+import React from "react";
 
 interface WalletHomeProps {
     isOpenTopUp: boolean;
@@ -7,13 +7,21 @@ interface WalletHomeProps {
 }
 
 const WalletHome: React.FC<WalletHomeProps> = ({ isOpenTopUp, setOpenTopUp }) => {
-    const [wallet, setWallet] = useState({
+    // const [wallet, setWallet] = useState({
+    //     unicoinBalance: 560, 
+    //     unicoinMiniBalance: 1250,
+    //     rupiahBalance: 125000, 
+    //     totalValue: 300470, 
+    //     dailyEarning: 47
+    // });
+
+    const wallet = {
         unicoinBalance: 560, // UC
         unicoinMiniBalance: 1250, // UCM
         rupiahBalance: 125000, // RP
         totalValue: 300470, // dalam Rupiah (total semua wallet)
         dailyEarning: 47
-    });
+    }
 
     // Primary payment method info
     const primaryCard = {

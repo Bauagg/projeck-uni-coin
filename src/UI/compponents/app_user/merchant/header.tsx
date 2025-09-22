@@ -1,6 +1,6 @@
 import InputSearchGlobal from "../../global/input_search";
 import "./merchant.css"
-import React, { useState } from "react";
+import React from "react";
 
 interface HeaderMerchantUserProps {
     activeCategory: string;

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Html5Qrcode, type Html5QrcodeCameraScanConfig } from "html5-qrcode";
 import ButtonPrimary from "../../global/button_primary";
 

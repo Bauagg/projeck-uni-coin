@@ -3,11 +3,17 @@ import { useEffect, useState } from "react";
 
 const ProfileHome = () => {
     const [scrolled, setScrolled] = useState(false);
-    const [user, setUser] = useState({
+    // const [user, setUser] = useState({
+    //     name: "Sarah Wijaya",
+    //     level: "Gold Member",
+    //     avatar: "https://avatar.iran.liara.run/public"
+    // });
+
+    const user = {
         name: "Sarah Wijaya",
         level: "Gold Member",
         avatar: "https://avatar.iran.liara.run/public"
-    });
+    }
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 10);

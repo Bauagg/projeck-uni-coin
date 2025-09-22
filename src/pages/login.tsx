@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import type { ChangeEvent, FormEvent } from 'react';
+import React from 'react';
 import ButtonPrimary from '../UI/compponents/global/button_primary';
 import InputGlobal from '../UI/compponents/global/input';
 import CheckboxGlobal from '../UI/compponents/global/checbox';

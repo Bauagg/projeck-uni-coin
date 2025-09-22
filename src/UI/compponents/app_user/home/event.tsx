@@ -1,23 +1,91 @@
 import "./home.css"
-import { useState } from "react";
+// import { useState } from "react";
 
-interface EventItem {
-    id: number;
-    title: string;
-    description: string;
-    reward: string;
-    type: string;
-    icon: string;
-    status: "available" | "progress" | "active" | "completed" | "cooldown";
-    bgColor: string;
-    cooldown?: string | null;
-    progress?: string;
-    timeLeft?: string;
-    streak?: string;
-}
+// interface EventItem {
+//     id: number;
+//     title: string;
+//     description: string;
+//     reward: string;
+//     type: string;
+//     icon: string;
+//     status: "available" | "progress" | "active" | "completed" | "cooldown";
+//     bgColor: string;
+//     cooldown?: string | null;
+//     progress?: string;
+//     timeLeft?: string;
+//     streak?: string;
+// }
 
 const Eventhome = () => {
-    const [events, setEvents] = useState<EventItem[]>([
+    // const [events, setEvents] = useState<EventItem[]>([
+    //     {
+    //         id: 1,
+    //         title: "Spin & Win Daily",
+    //         description: "Putar roda beruntung harian",
+    //         reward: "50-500 UniCoin",
+    //         type: "game",
+    //         icon: "🎯",
+    //         status: "available",
+    //         cooldown: null,
+    //         bgColor: "from-purple-500 to-pink-500",
+    //     },
+    //     {
+    //         id: 2,
+    //         title: "UMKM Shopping Challenge",
+    //         description: "Belanja di 5 merchant berbeda",
+    //         reward: "1000 UniCoin",
+    //         type: "challenge",
+    //         icon: "🛍️",
+    //         status: "progress",
+    //         progress: "3/5",
+    //         bgColor: "from-blue-500 to-cyan-500",
+    //     },
+    //     {
+    //         id: 3,
+    //         title: "Kopi Mantap Festival",
+    //         description: "Event weekend di Taman Kota",
+    //         reward: "200 UniCoin",
+    //         type: "airdrop",
+    //         icon: "☕",
+    //         status: "active",
+    //         timeLeft: "2 hari lagi",
+    //         bgColor: "from-orange-500 to-yellow-500",
+    //     },
+    //     {
+    //         id: 4,
+    //         title: "Lucky Numbers",
+    //         description: "Tebak angka beruntung hari ini",
+    //         reward: "100-1000 UniCoin",
+    //         type: "game",
+    //         icon: "🎲",
+    //         status: "available",
+    //         cooldown: null,
+    //         bgColor: "from-green-500 to-emerald-500",
+    //     },
+    //     {
+    //         id: 5,
+    //         title: "Check-in Streak",
+    //         description: "Check-in harian berturut-turut",
+    //         reward: "25 UniCoin",
+    //         type: "daily",
+    //         icon: "📅",
+    //         status: "completed",
+    //         streak: "7 hari",
+    //         bgColor: "from-indigo-500 to-purple-500",
+    //     },
+    //     {
+    //         id: 6,
+    //         title: "Refer a Friend",
+    //         description: "Ajak teman pakai UniCoin",
+    //         reward: "500 UniCoin",
+    //         type: "referral",
+    //         icon: "👥",
+    //         status: "available",
+    //         bgColor: "from-pink-500 to-rose-500",
+    //     },
+    // ]);
+
+    const events = [
         {
             id: 1,
             title: "Spin & Win Daily",
@@ -26,7 +94,7 @@ const Eventhome = () => {
             type: "game",
             icon: "🎯",
             status: "available",
-            cooldown: null,
+            cooldown: "",
             bgColor: "from-purple-500 to-pink-500",
         },
         {
@@ -83,7 +151,7 @@ const Eventhome = () => {
             status: "available",
             bgColor: "from-pink-500 to-rose-500",
         },
-    ]);
+    ]
 
     return (
         <div className="px-5">
@@ -126,7 +194,7 @@ const Eventhome = () => {
                                         )}
                                         {event.cooldown && (
                                             <span className="text-xs bg-red-500/20 text-red-400 px-2 py-1 rounded-full">
-                                                Cooldown: {event.cooldown}
+                                                Cooldown: {event?.cooldown}
                                             </span>
                                         )}
                                         {event.streak && (

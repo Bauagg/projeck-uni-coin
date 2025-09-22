@@ -1,0 +1,27 @@
+      .gradient-card {
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .coin-glow {
+          box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+      }
+
+      .pulse-glow {
+          animation: pulse-glow 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes pulse-glow {
+          from {
+              box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+          }
+
+          to {
+              box-shadow: 0 0 30px rgba(255, 193, 7, 0.6);
+          }
+      }
+
+      .animate-bounce-slow {
+          animation: bounce 3s infinite;
+      }

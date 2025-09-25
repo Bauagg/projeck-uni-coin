@@ -1,5 +1,5 @@
-import RegisterBranding from "../UI/compponents/register/register_branding";
-import RegisterForm from "../UI/compponents/register/register_form";
+import RegisterBranding from "../UI/components/register/register_branding";
+import RegisterForm from "../UI/components/register/register_form";
 
 const Register = () => {
   return (

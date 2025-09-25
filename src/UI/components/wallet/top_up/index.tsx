@@ -1,9 +1,9 @@
 import { X } from "lucide-react";
 import type React from "react";
 import { useState } from "react";
-import TopUpInputNominal from "./top_up/input_nominal";
-import BankWalletList from "./top_up/bank_wallet_list";
-import PaymentDetail from "./top_up/payment_detail";
+import TopUpInputNominal from "./input_nominal";
+import BankWalletList from "./bank_wallet_list";
+import PaymentDetail from "./payment_detail";
 
 interface TopUpWalletUserProps {
   onClose: () => void;

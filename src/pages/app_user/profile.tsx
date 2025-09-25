@@ -1,13 +1,13 @@
 import { Bell, LogOut, Settings } from "lucide-react"
-import NavbarUserApp from "../../UI/compponents/app_user/navbar"
+import NavbarUserApp from "../../UI/components/app_user/navbar"
 import ImageLogo from "../../assets/image/logo-unicoin-mini.svg"
 import { useState } from "react";
-import NavigationProfile from "../../UI/compponents/app_user/profile.tsx/navigation_button_profile";
-import ProfileForm from "../../UI/compponents/app_user/profile.tsx/profile_form";
-import Achievements from "../../UI/compponents/app_user/profile.tsx/achievements";
-import TransactionProfile from "../../UI/compponents/app_user/profile.tsx/transactions";
-import WalletProfile from "../../UI/compponents/app_user/profile.tsx/wallet";
-import Security from "../../UI/compponents/app_user/profile.tsx/security";
+import NavigationProfile from "../../UI/components/app_user/profile.tsx/navigation_button_profile";
+import ProfileForm from "../../UI/components/app_user/profile.tsx/profile_form";
+import Achievements from "../../UI/components/app_user/profile.tsx/achievements";
+import TransactionProfile from "../../UI/components/app_user/profile.tsx/transactions";
+import WalletProfile from "../../UI/components/app_user/profile.tsx/wallet";
+import Security from "../../UI/components/app_user/profile.tsx/security";
 
 const ProfileUser = () => {
     const [activeTab, setActiveTab] = useState('profile');

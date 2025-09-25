@@ -1,7 +1,7 @@
 import { useState } from "react";
-import HeaderMerchantUser from "../../UI/compponents/app_user/merchant/header"
-import NavbarUserApp from "../../UI/compponents/app_user/navbar"
-import StatsBannerMerchantUser from "../../UI/compponents/app_user/merchant/stats_banner";
+import HeaderMerchantUser from "../../UI/components/app_user/merchant/header"
+import NavbarUserApp from "../../UI/components/app_user/navbar"
+import StatsBannerMerchantUser from "../../UI/components/app_user/merchant/stats_banner";
 
 const MerchantUser = () => {
     const [activeCategory, setActiveCategory] = useState('all');

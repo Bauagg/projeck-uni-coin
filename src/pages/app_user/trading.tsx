@@ -1,12 +1,12 @@
 import "../..//UI/compponents/app_user/trading/trading.css"
 import ImagesLogo from "../../assets/image/logo-unicoin-mini.svg"
 import { useEffect, useState } from "react";
-import NavbarUserApp from "../../UI/compponents/app_user/navbar";
-import PriceBanner from "../../UI/compponents/app_user/trading/price_banner";
-import ActiveTabTrading from "../../UI/compponents/app_user/trading/active_tab_trading";
-import PortofolioTreding from "../../UI/compponents/app_user/trading/portofolio";
-import HistoryTrading from "../../UI/compponents/app_user/trading/history_trading";
-import UMKMEventTrading from "../../UI/compponents/app_user/trading/umkm_event_trading";
+import NavbarUserApp from "../../UI/components/app_user/navbar";
+import PriceBanner from "../../UI/components/app_user/trading/price_banner";
+import ActiveTabTrading from "../../UI/components/app_user/trading/active_tab_trading";
+import PortofolioTreding from "../../UI/components/app_user/trading/portofolio";
+import HistoryTrading from "../../UI/components/app_user/trading/history_trading";
+import UMKMEventTrading from "../../UI/components/app_user/trading/umkm_event_trading";
 
 const UniCoinTradingApp = () => {
     const [currentPrice, setCurrentPrice] = useState(100);

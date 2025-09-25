@@ -1,10 +1,10 @@
 import { useState } from "react"
-import Eventhome from "../../UI/compponents/app_user/home/event"
-import ProfileHome from "../../UI/compponents/app_user/home/profile"
-import RecentTransaction from "../../UI/compponents/app_user/home/recent-transactions"
-import WalletHome from "../../UI/compponents/app_user/home/wallet"
-import NavbarUserApp from "../../UI/compponents/app_user/navbar"
-import TopUpWalletUser from "../../UI/compponents/wallet"
+import Eventhome from "../../UI/components/app_user/home/event"
+import ProfileHome from "../../UI/components/app_user/home/profile"
+import RecentTransaction from "../../UI/components/app_user/home/recent-transactions"
+import WalletHome from "../../UI/components/app_user/home/wallet"
+import NavbarUserApp from "../../UI/components/app_user/navbar"
+import TopUpWalletUser from "../../UI/components/wallet/top_up"
 
 const HomeUser = () => {
     const [isOpenTopUp, setOpenTopUp] = useState(false)

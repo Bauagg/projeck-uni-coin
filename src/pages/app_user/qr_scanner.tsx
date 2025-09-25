@@ -1,6 +1,6 @@
 import { useState } from "react";
-import QRScannerUser from "../../UI/compponents/app_user/QRScaner/scan_qr";
-import NavbarUserApp from "../../UI/compponents/app_user/navbar";
+import QRScannerUser from "../../UI/components/app_user/QRScaner/scan_qr";
+import NavbarUserApp from "../../UI/components/app_user/navbar";
 
 export default function QRScanner() {
     const [qrResult, setQrResult] = useState<string | null>(null);

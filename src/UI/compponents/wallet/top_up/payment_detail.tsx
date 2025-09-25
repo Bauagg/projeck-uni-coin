@@ -134,7 +134,7 @@ const PaymentDetail: React.FC<PaymentDetail> = ({
       <div className="flex justify-between gap-3">
         <button
           onClick={() => setStep(2)}
-          className="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors text-sm"
+          className="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors text-sm"
         >
           Change Method
         </button>

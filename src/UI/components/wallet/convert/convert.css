@@ -1,0 +1,33 @@
+.gradient-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .convert-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .convert-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 193, 7, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .convert-card.selected {
+    border-color: #ffc107;
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
+  }
+  
+  .floating-action {
+    background: linear-gradient(135deg, #ffc107, #ff8f00);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
+  }
+  
+  .unicoin-yellow { color: #ffc107; }
+  .unicoin-orange { color: #ff8f00; }
+  .bg-unicoin-dark { background-color: #0a0a0a; }
+  .bg-unicoin-gray { background-color: #1a1a1a; }

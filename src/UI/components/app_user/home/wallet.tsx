@@ -4,9 +4,11 @@ import React from "react";
 interface WalletHomeProps {
     isOpenTopUp: boolean;
     setOpenTopUp: (val: boolean) => void;
+    isOpenWithdraw: boolean;
+    setOpenWithdraw: (val: boolean) => void;
 }
 
-const WalletHome: React.FC<WalletHomeProps> = ({ isOpenTopUp, setOpenTopUp }) => {
+const WalletHome: React.FC<WalletHomeProps> = ({ isOpenTopUp, setOpenTopUp, isOpenWithdraw, setOpenWithdraw }) => {
     // const [wallet, setWallet] = useState({
     //     unicoinBalance: 560, 
     //     unicoinMiniBalance: 1250,
@@ -102,7 +104,7 @@ const WalletHome: React.FC<WalletHomeProps> = ({ isOpenTopUp, setOpenTopUp }) =>
                         <i className="fas fa-plus mb-1 block text-sm"></i>
                         <span className="text-xs">Top Up</span>
                     </button>
-                    <button className="bg-red-500 text-white py-3 rounded-xl font-semibold hover:bg-red-600 transition-all">
+                    <button onClick={()=> setOpenWithdraw(!isOpenWithdraw)} className="bg-red-500 text-white py-3 rounded-xl font-semibold hover:bg-red-600 transition-all">
                         <i className="fas fa-arrow-up mb-1 block text-sm"></i>
                         <span className="text-xs">Withdraw</span>
                     </button>

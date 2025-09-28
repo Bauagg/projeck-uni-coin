@@ -7,6 +7,7 @@ import NavbarUserApp from "../../UI/components/app_user/navbar";
 import TopUpWalletUser from "../../UI/components/wallet/top_up";
 import WithdrawIndexUser from "../../UI/components/wallet/withdraw";
 import ConvertIndexUser from "../../UI/components/wallet/convert";
+import TransferIndexUser from "../../UI/components/wallet/transfer";
 
 const HomeUser = () => {
   const [isOpenTopUp, setOpenTopUp] = useState(false);
@@ -22,6 +23,10 @@ const HomeUser = () => {
         setOpenTopUp={setOpenTopUp}
         isOpenWithdraw={isOpenWithdraw}
         setOpenWithdraw={setOpenWithdraw}
+        isOpenTransfers={isOpenTransfers}
+        setOpenTransfers={setOpenTransfers}
+        isOpenConvert={isOpenCnvert}
+        setOpenConvert={setOpenConvert}
       />
       <Eventhome />
       <RecentTransaction />
@@ -34,7 +39,11 @@ const HomeUser = () => {
       )}
 
       {isOpenCnvert && (
-        <ConvertIndexUser onClose={() => setOpenConvert(false)} />
+        <ConvertIndexUser onClose={() => setOpenConvert(false)} isOpen={isOpenCnvert} />
+      )}
+
+      {isOpenTransfers && (
+        <TransferIndexUser onClose={() => setOpenTransfers(false)} isOpen={isOpenTransfers} />
       )}
     </div>
   );

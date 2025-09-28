@@ -6,9 +6,13 @@ interface WalletHomeProps {
     setOpenTopUp: (val: boolean) => void;
     isOpenWithdraw: boolean;
     setOpenWithdraw: (val: boolean) => void;
+    isOpenTransfers: boolean;
+    setOpenTransfers: (val: boolean) => void;
+    isOpenConvert: boolean;
+    setOpenConvert: (val: boolean) => void;
 }
 
-const WalletHome: React.FC<WalletHomeProps> = ({ isOpenTopUp, setOpenTopUp, isOpenWithdraw, setOpenWithdraw }) => {
+const WalletHome: React.FC<WalletHomeProps> = ({ isOpenTopUp, setOpenTopUp, isOpenWithdraw, setOpenWithdraw, isOpenTransfers, setOpenTransfers, isOpenConvert, setOpenConvert }) => {
     // const [wallet, setWallet] = useState({
     //     unicoinBalance: 560, 
     //     unicoinMiniBalance: 1250,
@@ -104,15 +108,15 @@ const WalletHome: React.FC<WalletHomeProps> = ({ isOpenTopUp, setOpenTopUp, isOp
                         <i className="fas fa-plus mb-1 block text-sm"></i>
                         <span className="text-xs">Top Up</span>
                     </button>
-                    <button onClick={()=> setOpenWithdraw(!isOpenWithdraw)} className="bg-red-500 text-white py-3 rounded-xl font-semibold hover:bg-red-600 transition-all">
+                    <button onClick={() => setOpenWithdraw(!isOpenWithdraw)} className="bg-red-500 text-white py-3 rounded-xl font-semibold hover:bg-red-600 transition-all">
                         <i className="fas fa-arrow-up mb-1 block text-sm"></i>
                         <span className="text-xs">Withdraw</span>
                     </button>
-                    <button className="bg-purple-500 text-white py-3 rounded-xl font-semibold hover:bg-purple-600 transition-all">
+                    <button onClick={() => setOpenConvert(!isOpenConvert)} className="bg-purple-500 text-white py-3 rounded-xl font-semibold hover:bg-purple-600 transition-all">
                         <i className="fas fa-exchange-alt mb-1 block text-sm"></i>
                         <span className="text-xs">Convert</span>
                     </button>
-                    <button className="bg-blue-500 text-white py-3 rounded-xl font-semibold hover:bg-blue-600 transition-all">
+                    <button onClick={() => setOpenTransfers(!isOpenTransfers)} className="bg-blue-500 text-white py-3 rounded-xl font-semibold hover:bg-blue-600 transition-all">
                         <i className="fas fa-paper-plane mb-1 block text-sm"></i>
                         <span className="text-xs">Transfer</span>
                     </button>

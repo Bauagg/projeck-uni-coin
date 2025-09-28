@@ -7,6 +7,7 @@ import MerchantUser from '../pages/app_user/merchant';
 import QRScanner from '../pages/app_user/qr_scanner';
 import UniCoinTradingApp from '../pages/app_user/trading';
 import ProfileUser from '../pages/app_user/profile';
+import PagesGamesGameSpin from '../pages/games/game_spin';
 
 const router = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
     {
         path: '/profile-user',
         element: <ProfileUser />
+    },
+    {
+        path: '/games/game_spin',
+        element: <PagesGamesGameSpin />
     }
 ]);
 
